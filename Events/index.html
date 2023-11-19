@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduce & Selector</title>
+    <link rel="stylesheet" href="./../common/common.css" />
+    <style>
+      #container :is(h3, button, p, h1, hr) {
+        margin-bottom: 20px;
+      }
+
+      #container form :is(input[type="text"], input[type="email"], select) {
+        width: 250px;
+        padding: 0.2rem 0.5rem;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: .5px solid #333;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>JQuery Crash Course</h1>
+    </header>
+
+    <div id="container">
+      <h3>Mouse Events</h3>
+      <button id="btn1" class="btn-class">Button 1</button>
+      <button id="btn2">Button 2</button>
+      <p class="para1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+        cupiditate voluptate voluptatibus tenetur nobis dolores autem, amet
+        nesciunt quia explicabo quisquam, non, maxime incidunt inventore aperiam
+        provident aliquid a quod.
+      </p>
+      <h1 id="current-position"></h1>
+
+      <hr />
+
+      <form action="" id="form">
+        <label for="name">Name</label>
+        <br />
+        <input type="text" id="name" />
+        <br />
+        <label for="email">Email</label>
+        <br />
+        <input type="email" id="email" />
+        <br />
+        <label for="gender">Gender</label>
+        <br />
+        <select name="gender" id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
